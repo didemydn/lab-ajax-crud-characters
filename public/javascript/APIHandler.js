@@ -13,6 +13,7 @@ class APIHandler {
   getOneRegister (characterId) {
     return this.api.get(`/characters/${characterId}`)
     .then((response) => {return response.data});
+    //.catch((err) => {console.log(err)})
   }
 
   createOneRegister (characterInfo) {
